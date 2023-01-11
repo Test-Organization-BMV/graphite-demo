@@ -10,3 +10,5 @@ def create_app():
 def register_blueprints(app: Flask):
     from app.routes.main import bp as main_blueprint
     app.register_blueprint(main_blueprint)
+    from app.routes.addition import bp as addition_blueprint
+    app.register_blueprint(addition_blueprint)
